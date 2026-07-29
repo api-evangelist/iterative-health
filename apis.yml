@@ -1,8 +1,26 @@
 aid: iterative-health
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/iterative-health.png
 name: Iterative Health
-description: 'Iterative Health is a company surfaced as a portfolio company of gv, obvious-ventures and
-  added to the API Evangelist network as a stub for enrichment. Sector: life-sciences. This profile is
-  a lead awaiting the enrichment pipeline.'
+description: 'Iterative Health is a Boston-based clinical research and healthcare technology company
+  operating a global network of community-based clinical research sites that connect trial sponsors with
+  providers to accelerate enrollment and expand patient access to investigational therapies. Its
+  therapeutic focus spans gastroenterology, hepatology, obesity, and cardiology, and its SKOUT AI
+  tooling (rooted in the company''s computer-vision work in GI endoscopy) helps sites and sponsors run
+  research more efficiently. Backed by GV and Obvious Ventures and funded through a $77M Series C, the
+  company partners with provider networks including GI Alliance, One GI, and US Heart & Vascular. As of
+  this enrichment pass Iterative Health publishes no public developer API, documentation, or developer
+  portal; this profile captures its public company identity and domain-security posture only.'
 url: https://raw.githubusercontent.com/api-evangelist/iterative-health/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -13,10 +31,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Life Sciences
+- Clinical Research
+- Clinical Trials
+- Gastroenterology
+- Healthcare
+- Artificial Intelligence
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -24,5 +47,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/iterative-health-domain-security.yml
 - type: Website
   url: https://iterative.health
+- type: Support
+  url: https://iterative.health/contact-us-iterative-health/
+- type: TermsOfService
+  url: https://iterative.health/terms-and-service/
+- type: PrivacyPolicy
+  url: https://iterative.health/privacy-policy/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
